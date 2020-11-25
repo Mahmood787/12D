@@ -47,7 +47,7 @@ const resolvers = {
   Mutation:{
     addBookmark: async(_, {url,title,description})=>{
       try{
-        const results = client.query(
+        const results = await client.query(
           q.Create(q.Collection('links'),{data:{url:url, title:title, description:description}})
         )
         return results.data
@@ -58,7 +58,7 @@ const resolvers = {
     },
     deleteBookmark:async(_,{id})=>{
       try{
-        const result = client.query(
+        const result = await client.query(
           q.Delete(q.Ref(q.Collection('links'),id))
         )
         return result.data
