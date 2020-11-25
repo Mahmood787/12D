@@ -29,7 +29,7 @@ const resolvers = {
         q.Map(q.Paginate(q.Documents(q.Collection('links'))),
         q.Lambda(x=> q.Get(x))
         ))
-        const data = results.data.map((dt)=>{
+        const data = results.data.map(dt=>{
           return{
             id:dt.ref.id,
             url:dt.data.url,

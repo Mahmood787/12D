@@ -1,6 +1,6 @@
 import React from "react"
-import {useQuery,useMutation} from '@apollo/client'
-import gql from 'graphql-tag'
+import {useQuery,useMutation, gql} from '@apollo/client'
+// import gql from 'graphql-tag'
 //material
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
