@@ -1,7 +1,2 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+export {wrapRootElement} from './src/apollo/wraper.tsx'
 
-// You can delete this file if you're not using it

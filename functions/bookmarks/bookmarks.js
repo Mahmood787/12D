@@ -48,7 +48,7 @@ const resolvers = {
     addBookmark: async(_, {url,title,description})=>{
       try{
         const results = client.query(
-          q.Create(q.Collection('links'),{data:{url, title, description}})
+          q.Create(q.Collection('links'),{data:{url:url, title:title, description:description}})
         )
         return results.data
       }catch(error){
