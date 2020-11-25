@@ -91,7 +91,10 @@ const IndexPage = () => {
                 description:value.description
               },
               refetchQueries:[{query:GET_BOOKMARK}]
-            })
+
+            }
+            )
+            console.log(value)
             action.resetForm({
               values:{
                 url:"",
